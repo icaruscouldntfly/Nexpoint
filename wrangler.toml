@@ -1,0 +1,20 @@
+name = "nexpoint"
+main = "src/index.ts"
+compatibility_date = "2024-11-15"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "nexpoint_db"
+database_id = "e1a1df24-05b4-4981-af1e-1c38d0f03f0e"
+
+[env.production]
+route = "https://nexpoint.shop/*"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "nexpoint_db"
+database_id = "e1a1df24-05b4-4981-af1e-1c38d0f03f0e"
+
+[env.production.vars]
+EMAIL_USER = "nexpointinvoice@gmail.com"
+EMAIL_PASS = "fsrr cvkf uqoc oqgk"
